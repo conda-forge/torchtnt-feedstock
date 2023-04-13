@@ -144,4 +144,6 @@ Feedstock Maintainers
 =====================
 
 * [@sarthakpati](https://github.com/sarthakpati/)
+* [@faildeny](https://github.com/faildeny/)
+* [@RichardObi](https://github.com/RichardObi/)
 

@@ -1,5 +1,5 @@
 {% set name = "torchtnt" %}
-{% set version = "0.2.1" %}
+{% set version = "0.2.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   - url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/torchtnt-{{ version }}.tar.gz
-    sha256: 5fcfda38f9d72ed307a645c09a53b33b3ecfcb10062cb9dc37e41d123caba7a1
+    sha256: 06e8184f58d15307bf342fcf2ed11a3dd8d00f3d715b08f3792af2f48a2d5970
   - url: https://raw.githubusercontent.com/pytorch/tnt/master/requirements.txt
     sha256: 7a91d0f97c358e1b0735d6c8a77d947cd792e6e0f8df96aee0c5ec6bc894cdd6
   - url: https://raw.githubusercontent.com/pytorch/tnt/master/dev-requirements.txt

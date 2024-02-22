@@ -33,6 +33,7 @@ requirements:
     - tensorboard
     - pytorch
     - tabulate
+    - torchsnapshot
     - tqdm
     - typing-extensions
 

@@ -11,12 +11,12 @@ source:
   - url: https://raw.githubusercontent.com/pytorch/tnt/master/requirements.txt
     sha256: 7a91d0f97c358e1b0735d6c8a77d947cd792e6e0f8df96aee0c5ec6bc894cdd6
   - url: https://raw.githubusercontent.com/pytorch/tnt/master/dev-requirements.txt
-    sha256: c728fba6d2aa5e0add8b43b14cbb0a48da2aa48f5df6f5edde175a71f0556858
+    sha256: 9cfc5c36242e99db8d7c59c05dfcf970e6b8daeaac16467b1c11baa15831534e
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -33,6 +33,7 @@ requirements:
     - tensorboard
     - pytorch
     - tabulate
+    - torchsnapshot
     - tqdm
     - typing-extensions
 

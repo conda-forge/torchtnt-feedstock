@@ -9,9 +9,9 @@ source:
   - url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/torchtnt-{{ version }}.tar.gz
     sha256: 26cf4e718965afc293e76158b47283722055bcf79e94d0e67e70b5dbf61c0c9b
   - url: https://raw.githubusercontent.com/pytorch/tnt/master/requirements.txt
-    sha256: 7a91d0f97c358e1b0735d6c8a77d947cd792e6e0f8df96aee0c5ec6bc894cdd6
+    sha256: 3014de0cda5b7f3a17ee67da00d78cedf617d0cab2e49d636923dbe9ca36547f
   - url: https://raw.githubusercontent.com/pytorch/tnt/master/dev-requirements.txt
-    sha256: def1d652ba72dc51fa52467bd35880b53ea39f597f5513e9819aa5bf8db0c76c
+    sha256: e0163f410464bdf95d4e2bcbebe4dee1bc62151c5ab8aa58ee1de8cd3e1eee89
 
 build:
   noarch: python

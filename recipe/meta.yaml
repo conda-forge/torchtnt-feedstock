@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  - url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/torchtnt-{{ version }}.tar.gz
+  - url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/torchtnt-{{ version }}.tar.gz
     sha256: 26cf4e718965afc293e76158b47283722055bcf79e94d0e67e70b5dbf61c0c9b
   - url: https://raw.githubusercontent.com/pytorch/tnt/master/requirements.txt
     sha256: 7a91d0f97c358e1b0735d6c8a77d947cd792e6e0f8df96aee0c5ec6bc894cdd6
@@ -16,19 +16,19 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python {{ python_min }}
   run:
     - fsspec
     - numpy
     - packaging
     - psutil
     - pyre-extensions
-    - python >=3.7
+    - python >={{ python_min }}
     - setuptools
     - tensorboard
     - pytorch
@@ -44,6 +44,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/pytorch/tnt
